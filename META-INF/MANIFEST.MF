@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Created-By: alexoley
+main-class: telegram.fit.Application
+class-path: telegrambots-abilities-3.6-jar-with-dependencies.jar
