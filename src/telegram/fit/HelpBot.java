@@ -55,4 +55,19 @@ public class HelpBot extends AbilityBot {
                 .action(ctx -> silent.send(message, ctx.chatId()))
                 .build();
     }
+
+    public Ability roPollard() {
+        return Ability.builder()
+                .name("ro")
+                .info("arguments x g p")
+                .privacy(PUBLIC)
+                .locality(USER)
+                .input(3)
+                .action(ctx -> silent.send(RoPollard.getResult(
+                        ctx.firstArg(),
+                        ctx.secondArg(),
+                        ctx.thirdArg()),
+                        ctx.chatId()))
+                .build();
+    }
 }
